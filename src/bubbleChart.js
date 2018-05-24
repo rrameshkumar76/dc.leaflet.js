@@ -14,7 +14,7 @@ dc_leaflet.bubbleChart = function (parent, chartGroup) {
         return _chart.keyAccessor()(d);
     };
 
-    var _r = d3.scale.linear().domain([0, 100]);
+    var _r = d3.scaleLinear().domain([0, 100]);
     var _brushOn = true;
 
     var _marker = function (d, map) {
